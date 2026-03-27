@@ -6,7 +6,7 @@ class Node:
         self.state = state
         self.action = action
         self.parent = parent
-        self.cost = path_cost
+        self.path_cost = path_cost
 
     def __repr__(self):
         return f"([NODE] State: {self.state}, Action: {self.action}, Parent: {self.parent._state}, Cost: {self.cost})"

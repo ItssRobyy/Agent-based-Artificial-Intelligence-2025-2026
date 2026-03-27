@@ -4,8 +4,8 @@ class StreetProblem:
 
     def __init__(self, initial_state, goal_state):
 
-        self._initial_state = initial_state
-        self._goal_state = goal_state
+        self.initial_state = initial_state
+        self.goal_state = goal_state
 
         self.map = {
             CORATO: [TRANI, BISCEGLIE, RUVO, ALTAMURA, ANDRIA],
@@ -32,14 +32,14 @@ class StreetProblem:
         raise ValueError('Action not possible')
 
     def explore(self, path):
-        state = self._initial_state
+        state = self.initial_state
         evolution = [('S',state)]
         is_solution = False
         for action in path:
             evolution.append(('A',action))
             state = self.result(state, action)
             evolution.append(('S',state))
-        if state == self._goal_state:
+        if state == self.goal_state:
             is_solution = True
         return evolution, is_solution
 
@@ -48,10 +48,9 @@ class StreetProblem:
             c1, c2, cost = street
             if (c1 == state and action == c2) or (c2 == state and action == c1):
                 return cost
+        print(state, action)
         raise ValueError('Action not allowed')
+    
+    def is_goal(self, state):
+        return state == self.goal_state
 
-
-prob = StreetProblem(initial_state=CORATO, goal_state=RUVO)
-
-actions = prob.actions(CORATO)
-print(actions)
