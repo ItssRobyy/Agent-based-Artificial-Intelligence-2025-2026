@@ -1,7 +1,7 @@
 from problems.streetProblem.v1 import StreetProblem
 from problems.streetProblem.cities import * 
-from search import Search
-from strategies import RandomStrategy, UniformCostStrategy
+from path_search.search import Search
+from path_search.strategies import RandomStrategy, UniformCostStrategy
 
 problem = StreetProblem(TRANI, MODUGNO)
 

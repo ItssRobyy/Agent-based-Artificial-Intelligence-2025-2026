@@ -9,18 +9,21 @@ class HillClimbing():
     def search(self):
         
         state = self.problem.initial_state
+        score = self.problem.evaluate(state)
 
-        # Hill Climbing
         while True:
+            # get neighbors
             neighbors = self.get_neighbors(state)
             if not neighbors:
                 break
             
             best_neighbor = max(neighbors, key=lambda x: self.problem.evaluate(x))
-            if self.problem.evaluate(best_neighbor) <= self.problem.evaluate(state):
+            new_score = self.problem.evaluate(best_neighbor)
+            if new_score <= score:
                 break
-            
             state = best_neighbor
+            score = new_score
+            print(f"Utility {score}")
 
         return state
 

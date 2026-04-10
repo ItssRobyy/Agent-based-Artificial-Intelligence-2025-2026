@@ -1,8 +1,8 @@
 # from problems.waterJug.Mastromauro import WaterJugProblem
 # from problems.waterJug.v1 import WaterJugProblem
 from problems.waterJug.v2 import WaterJugProblem
-from search import Search
-from strategies import RandomStrategy, UniformCostStrategy
+from path_search.search import Search
+from path_search.strategies import RandomStrategy, UniformCostStrategy
 
 problem = WaterJugProblem((8,0,0))
 

@@ -23,9 +23,6 @@ class ChessQueensProblem:
         new_state = list(state)
         new_state[col] = row
         return tuple(new_state)
-
-    def is_goal(self, state):
-        return self.conflicts(state) == 0
     
     def print_state(self, state):
         for row in range(self.n):
@@ -50,10 +47,3 @@ class ChessQueensProblem:
     
     def evaluate(self, state):
         return -self.conflicts(state)
-
-if __name__ == "__main__":
-    chess_queens_problem = ChessQueensProblem(8)
-    print("Initial state:")
-    chess_queens_problem.print_state(chess_queens_problem.initial_state)
-    print("Number of conflicts:", chess_queens_problem.conflicts(chess_queens_problem.initial_state))
-    chess_queens_problem.is_goal(chess_queens_problem.initial_state)

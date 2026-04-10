@@ -9,8 +9,6 @@
 
 
 
-from problems.WaterJug.Mastromauro import EMPTY_C
-
 
 class WaterJugProblem:
 

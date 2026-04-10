@@ -96,3 +96,6 @@ class RobotNavigationProblem:
         x, y = state
         gs_x, gs_y = self.goal_state
         return ((x - gs_x) ** 2 + (y - gs_y) ** 2) ** 0.5
+    
+    def heuristic(self, state):
+        return self.mahattan_distance(state)

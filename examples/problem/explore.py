@@ -1,4 +1,4 @@
-from node import Node
+from path_search.node import Node
 from problems.streetProblem.v2 import *
 
 root_node = Node(ANDRIA, None, None, 0)

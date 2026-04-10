@@ -1,4 +1,4 @@
-from node import Node
+from path_search.node import Node
 
 def expand(node, problem):
     actions = problem.actions(node.state)
@@ -17,7 +17,7 @@ class Search:
         self.strategy = strategy
 
     def run(self):
-        root_node = Node(state=self.problem.initial_state, action=None, parent=None, path_cost=0)
+        root_node = Node(state=self.problem.initial_state, action=None, parent=None, path_cost=0, depth=0)
         fringe = [root_node]
         visited = dict()
 
