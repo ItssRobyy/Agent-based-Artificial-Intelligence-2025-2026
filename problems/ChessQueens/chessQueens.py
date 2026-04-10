@@ -1,3 +1,7 @@
+# Author: Carotenuto Giusy
+# Date: 2026-04-10
+
+
 # State representation: a tuple of length n, where the i-th element represents the column position of the queen in the i-th row.
 # Example: For n=4, the state (1, 3, 0, 2) means that the queen in the first row is in column 1, the queen in the second row is in column 3, the queen in the third row is in column 0, and the queen in the fourth row is in column 2.
 

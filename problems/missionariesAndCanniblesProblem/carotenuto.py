@@ -1,3 +1,7 @@
+# Author: Carotenuto Giusy
+# Date: 2026-04-10
+
+
 C1= 'muovi un cannibale'
 C2= 'muovi 2 cannibali'
 M1= 'muovi un missionario'

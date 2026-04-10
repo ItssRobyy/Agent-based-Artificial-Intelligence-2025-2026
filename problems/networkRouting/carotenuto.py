@@ -1,3 +1,7 @@
+# Author: Carotenuto Giusy
+# Date: 2026-04-10
+
+
 A = 'A'
 B = 'B'
 C = 'C'

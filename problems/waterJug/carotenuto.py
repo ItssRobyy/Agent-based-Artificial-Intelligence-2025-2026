@@ -1,3 +1,7 @@
+# Author: Carotenuto Giusy
+# Date: 2026-04-10
+
+
 Riempi1= 'Riempi 1'
 Riempi2= 'Riempi 2'
 Riempi3= 'Riempi 3'

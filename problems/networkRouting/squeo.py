@@ -1,3 +1,8 @@
+# Author: Squeo Gabriele
+# Date: 2026-04-10
+
+
+
 from path_search.node import Node
 # Nodes
 A = "A"

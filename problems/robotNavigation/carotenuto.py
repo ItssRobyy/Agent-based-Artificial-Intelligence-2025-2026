@@ -1,3 +1,7 @@
+# Author: Carotenuto Giusy
+# Date: 2026-04-10
+
+
 #realizzo il problema considerando un'astrazione del problema
 
 UP= 'up'

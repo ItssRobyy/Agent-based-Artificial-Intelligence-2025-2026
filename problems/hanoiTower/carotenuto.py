@@ -1,3 +1,7 @@
+# Author: Carotenuto Giusy
+# Date: 2026-04-10
+
+
 daunoadue= 'da uno a due'
 daunoatre= 'da uno a tre'
 dadueatre= 'da due a tre'
